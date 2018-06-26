@@ -14,13 +14,13 @@ import subprocess
 import timeit
 
  #---------------------------------Please Dont Edit The Creator-----------------------------#
- #                  					Titanz Bot Protect									#
- #                 Tolong Hargai Creator Bot Ini 											#
- #                                              Jangan Edit Creator Nya :"(					#
- #                 Jangan Sombong Memakai Bot Orang 										#
- #                                              Ini Bot Free , Not For Sale					#
- #			       Creator Titanz Bot : Ferianss / https://line.me/t/p/YFBy7TqfVg			#
- #                       Chat Creator Titanz Bot Jika Mengalami Error 						#
+ #                  					Titanz Bot Protect								                                        	#
+ #                 Tolong Hargai Creator Bot Ini 								                                			#
+ #                                              Jangan Edit Creator Nya :"(				            	#
+ #                 Jangan Sombong Memakai Bot Orang 							                              			#
+ #                                              Ini Bot Free , Not For Sale			            		#
+ #			       Creator Titanz Bot : Ferianss / https://line.me/t/p/YFBy7TqfVg	               		#
+ #                       Chat Creator Titanz Bot Jika Mengalami Error 					                	#
  #------------------------------------------------------------------------------------------#
 
 titanz = LINE() #Akun Utama

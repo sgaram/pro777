@@ -87,7 +87,6 @@ ki5MID = ki5.profile.mid
 Bots = [titanz,kiMID,ki2MID,ki3MID,ki4MID,ki5MID]
 creator = ["ISI MID KAMU"]
 Owner = ["ISI MID KAMU"
-Owners = ["ISI MID KAMU"]
 admin = ["ISI MID KAMU"]
 
 settings = {

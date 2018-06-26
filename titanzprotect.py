@@ -19,7 +19,7 @@ import timeit
  #                                              Jangan Edit Creator Nya :"(				            	#
  #                 Jangan Sombong Memakai Bot Orang 							                              			#
  #                                              Ini Bot Free , Not For Sale			            		#
- #			       Creator Titanz Bot : Ferianss / https://line.me/t/p/YFBy7TqfVg	               		#
+ #			       Creator Titanz Bot : Ferianss / https://line.me/ti/p/YFBy7TqfVg	               	#
  #                       Chat Creator Titanz Bot Jika Mengalami Error 					                	#
  #------------------------------------------------------------------------------------------#
 

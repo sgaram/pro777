@@ -13,7 +13,7 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 import subprocess
 import timeit
 
-#----------------------------------Fixed Bots Reinvite Owner and Assist---------------------------------#
+#----------------------------------Fixed Bots Reinvite Owner and Assist , Nambah 1 Assist Juga---------------------------------#
 
  #---------------------------------Please Dont Edit The Creator-----------------------------#
  #                  					Titanz Bot Protect									#

@@ -1348,7 +1348,7 @@ while True:
         ops = titanzPoll.singleTrace(count=50)
         if ops is not None:
             for op in ops:
-                titanzBot(op)
+                clientBot(op)
                 titanzPoll.setRevision(op.revision)
     except Exception as error:
         logError(error)

@@ -13,13 +13,15 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 import subprocess
 import timeit
 
+#----------------------------------Fixed Bots Reinvite Owner and Assist---------------------------------#
+
  #---------------------------------Please Dont Edit The Creator-----------------------------#
  #                  					Titanz Bot Protect									#
  #                 Tolong Hargai Creator Bot Ini 											#
  #                                              Jangan Edit Creator Nya :"(					#
  #                 Jangan Sombong Memakai Bot Orang 										#
  #                                              Ini Bot Free , Not For Sale					#
- #			       Creator Titanz Bot : Ferianss / https://line.me/t/p/YFBy7TqfVg			#
+ #			       Creator Titanz Bot : Ferianss / https://line.me/ti/p/YFBy7TqfVg			#
  #                       Chat Creator Titanz Bot Jika Mengalami Error 						#
  #------------------------------------------------------------------------------------------#
 

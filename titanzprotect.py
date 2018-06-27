@@ -14,6 +14,7 @@ import subprocess
 import timeit
 
 #Done Fixed Bots Reinvite Owner,Admin,Assist
+
 #Penambahan 1 Assist
 
  #---------------------------------Please Dont Edit The Creator-----------------------------#
@@ -659,18 +660,18 @@ def clientBot(op):
                                 titanz.sendMessage(to,"ADD Official Account Ecchi Lovers")
                                 titanz.sendContact(to,"ubd5c94536d3f8cbf00e29fd784c4a9cf")
                             if cmd == "creator":
-                                titanz.sendMessage(to,"Contact Dibawah Ini \nAdalah Creator Ecchi Bot")
+                                titanz.sendMessage(to,"Contact Dibawah Ini \nAdalah Creator Titanz Bot")
                                 titanz.sendContact(to,"u3986caa1a897a19a2096d84d2915b82f")
                             elif cmd == "speed":
                                 start = time.time()
-                                titanz.sendMessage(to, "Checking Speed Ecchi bot...")
+                                titanz.sendMessage(to, "Checking Speed Titanz bot...")
                                 elapsed_time = time.time() - start
                                 titanz.sendMessage(to, "[ Speed ]\n{} seconds".format(str(elapsed_time)))
                             elif cmd == "runtime":
                                 timeNow = time.time()
                                 runtime = timeNow - botStart
                                 runtime = format_timespan(runtime)
-                                titanz.sendMessage(to, "Ecchi Bot Has Been Run {}".format(str(runtime)))
+                                titanz.sendMessage(to, "Titanz Bot Has Been Run {}".format(str(runtime)))
                             elif cmd == 'about':
                                 try:
                                     arr = []
@@ -897,6 +898,7 @@ def clientBot(op):
                                     ki2.sendMessage(msg.to, "titanz Bot Was Here")
                                     ki3.sendMessage(msg.to, "titanz Bot Was Here Too")
                                     ki4.sendMessage(msg.to, "All Was Here Mother Fucker")
+                                    titanz1.sendMessage(msg.to, "Ready To Protect This Groups")
                             elif text.lower() == 'clearban':
                                 if msg._from in Owner:
                                     settings["blacklist"] = {}

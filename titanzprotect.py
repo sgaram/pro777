@@ -95,7 +95,8 @@ ki3MID = ki3.profile.mid
 ki4MID = ki4.profile.mid
 ki5MID = ki5.profile.mid
 
-
+#TAMBAHIN MID KAMU AJA 
+#JANGAN DIHAPUS MID INI NGENTOD
 Bots = [titanz,titanz1,kiMID,ki2MID,ki3MID,ki4MID,ki5MID]
 creator = ["u3986caa1a897a19a2096d84d2915b82f"]
 Owner = ["u3986caa1a897a19a2096d84d2915b82f"]

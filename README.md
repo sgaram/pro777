@@ -17,7 +17,7 @@ $ python -m pip install -r requirements.txt
 [HelloWorld](https://discord.gg/5jqbutB)
 
 ## Author Titanz Bot ( Rework HelloWorld )
-Ferianss / [Unknown](https://line.me/ti/p/YFBy7TqfVg)
+Ferianss / [Badumtess](https://line.me/ti/p/YFBy7TqfVg)
 
 ## Author HelloWorld
 Muhammad Mursalin Darmamawan / [Mastah Alin](https://line.me/ti/p/~muhmursalind)

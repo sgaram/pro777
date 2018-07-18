@@ -3,6 +3,7 @@
 from LineAPI.linepy import *
 from LineAPI.akad.ttypes import Message
 from LineAPI.akad.ttypes import ContentType as Type
+from threading import Thread
 from gtts import gTTS
 from time import sleep
 from datetime import datetime, timedelta
@@ -321,7 +322,6 @@ def helpmessage():
                     "╠☞ " + key + "SetPro 「On/Off」" + "\n" + \
                     "╠☞ " + key + "Titanz Masuk" + "\n" + \
                     "╠☞ " + key + "Titanz Out" + "\n" + \
-                    "╠☞ " + key + "Captain Left" + "\n" + \
                     "╠══[ Staff Add/Del Command ]" + "\n" + \
                     "║☞ " + key + "Staff add 「Mention」" + "\n" + \
                     "║☞ " + key + "Staff del 「Mention」" + "\n" + \
@@ -330,7 +330,6 @@ def helpmessage():
                     "║☞ " + key + "Speed" + "\n" + \
                     "║☞ " + key + "Runtime" + "\n" + \
                     "║☞ " + key + "Status" + "\n" + \
-                    "║☞ " + key + "Oa Ecchi" + "\n" + \
                     "║☞ " + key + "Respon" + "\n" + \
                     "║☞ " + key + "About" + "\n" + \
                     "╠══[ Daftar Admin Bot ]" + "\n" + \

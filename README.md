@@ -5,7 +5,7 @@
 ----
 
 ## Author Titanz Bot ( Rework HelloWorld )
-Ferianss / [Badumtess](https://line.me/ti/p/YFBy7TqfVg)
+Ferianss / [Just Ferians](https://line.me/ti/p/YFBy7TqfVg)
 
 ## Author HelloWorld
 Muhammad Mursalin Darmamawan / [Mastah Alin](https://line.me/ti/p/~muhmursalind)

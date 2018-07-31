@@ -28,49 +28,49 @@ import timeit
  #                       Chat Creator Titanz Bot Jika Mengalami Error 						#
  #------------------------------------------------------------------------------------------#
 
-titanz = LINE() #Akun Utama
+titanz = LINE("EvTS2oby6YPMbuWGsZb8.yAM1ZO3J61gOwuemMdtLYa.NYpAUwfsDoveZRrvB2RGI0vloyo5OzqkByoMLfRi9lg=") #Akun Utama
 titanzMid = titanz.profile.mid
 titanzProfile = titanz.getProfile()
 titanzSettings = titanz.getSettings()
 titanzPoll = OEPoll(titanz)
 botStart = time.time()
 
-titanz1 = LINE() #Akun Khusus Reinvite Owner atau Assist
+titanz1 = LINE("EvEVQLO78i9hFFODKTK7.rYQ2taYWmIaHwZoX6iKQ1W.exfNW1KWDc2oV/QLDefJqPXRHZ0TnmXc+Vp9V29uQME=") #Akun Khusus Reinvite Owner atau Assist
 titanz1Mid = titanz1.profile.mid
 titanz1Profile = titanz1.getProfile()
 titanz1Settings = titanz1.getSettings()
 titanz1Poll = OEPoll(titanz1)
 botStart = time.time()
 
-ki = LINE() #Assist 1
+ki = LINE("Evy7OCsYZ8chr5NMYgy6.BaiKNxR2VN7zWCBrQS6P5G.jl5NAyvvW9894OTD1Bk9U7gvYb/gc2WaypEAApxO36Q=") #Assist 1
 kiMid = ki.profile.mid
 kiProfile = ki.getProfile()
 kiSettings = ki.getSettings()
 kiPoll = OEPoll(ki)
 botStart = time.time()
 
-ki2 = LINE() #Assist 2
+ki2 = LINE("Evu5s0D5n8nlvLrt84Ca.UHbbg4pHBjT5VwCYtXmXsG.AY3zejVR4B7uEU9kYp17X3+UG3koCdUS9SCslWdAoZA=") #Assist 2
 ki2Mid = ki2.profile.mid
 ki2Profile = ki2.getProfile()
 ki2Settings = ki2.getSettings()
 ki2Poll = OEPoll(ki2)
 botStart = time.time()
 
-ki3 = LINE() #Assist 3
+ki3 = LINE("EvEk09kUJvUTXAUZNZWa.Oyj1ZAWaMt3CKaVDd5BW2G.0MUkEP4BZLuACIpJOn+KWtykglPbGlE5x5DCg+ZH0PA=") #Assist 3
 ki3Mid = ki3.profile.mid
 ki3Profile = ki3.getProfile()
 ki3Settings = ki3.getSettings()
 ki3Poll = OEPoll(ki3)
 botStart = time.time()
 
-ki4 = LINE() #Assist 4
+ki4 = LINE("EvE5gN5SQWYezKPqieLf.K9hUseF6j4f/WE5DLTHHBW.fmW4IX9Geq6Pd17J4siBRvxrTuq18Znv12p84xS/mqc=") #Assist 4
 ki4Mid = ki4.profile.mid
 ki4Profile = ki4.getProfile()
 ki4Settings = ki4.getSettings()
 ki4Poll = OEPoll(ki4)
 botStart = time.time()
 
-ki5 = LINE() #Bot Kick Luar (Ghost)
+ki5 = LINE("Evi2vObUZ3IgPfAr7b7f.eb8Fsy+dW4odT30yu3UjtW.5nMPYL3L5QFU6CStG8/WfNDT4KWM9mEJbgwA1LT0Pfo=") #Bot Kick Luar (Ghost)
 ki5Mid = ki5.profile.mid
 ki5Profile = ki5.getProfile()
 ki5Settings = ki5.getSettings()
@@ -99,9 +99,9 @@ ki5MID = ki5.profile.mid
 #TAMBAHIN MID KAMU AJA 
 #JANGAN DIHAPUS MID INI NGENTOD
 Bots = [titanz,titanz1,kiMID,ki2MID,ki3MID,ki4MID,ki5MID]
-creator = ["u3986caa1a897a19a2096d84d2915b82f"]
-Owner = ["u3986caa1a897a19a2096d84d2915b82f"]
-admin = ["u3986caa1a897a19a2096d84d2915b82f"]
+creator = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
+Owner = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
+admin = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
 
 settings = {
     "wblack": False,
@@ -147,7 +147,7 @@ settings = {
 }
 wait = {
     'autoAdd': False,
-    "tagme":"Don't Tag Me\nIf Urgent Please PC",
+    "tagme":"Tag detect",
     "autoRespon": False,
     "detectMention": False,
     "pname": False,
@@ -162,8 +162,8 @@ wait = {
             "status":False
             },
     'message':"""Thanks For Add Me
-Bot Public By Inojin
-Contact Me : https://line.me/ti/p/YFBy7TqfVg""",
+Bot Public By sepri_che
+Contact Me : https://line.me/ti/p/sepriche""",
     }
 
 cctv = {
@@ -311,9 +311,9 @@ def helpmessage():
         key = settings['keyCommand']
     else:
         key = ''
-    helpMessage =   "╭════════╬💦╬════════╮" + "\n" + \
-                    "      💦💦💦 Titanz ʙᴏᴛ 💦💦💦" + "\n" + \
-                    "╰════════╬💦╬════════╯" + "\n" \
+    helpMessage =   "╭════════╬╬════════╮" + "\n" + \
+                    "       sᴇᴘʀɪ ʙᴏᴛ " + "\n" + \
+                    "╰════════╬╬════════╯" + "\n" \
                     "╭☞[ Protect Command ]" + "\n" + \
                     "╠☞ " + key + "Protect 「On/Off」" + "\n" + \
                     "╠☞ " + key + "QrProtect 「On/Off」" + "\n" + \
@@ -335,9 +335,9 @@ def helpmessage():
                     "╠══[ Daftar Admin Bot ]" + "\n" + \
                     "║☞ " + key + "Ownerlist" + "\n" + \
                     "╰☞ " + key + "Stafflist" + "\n" + \
-                    "╭════════╬💦╬════════╮" + "\n" + \
-                    "      💦💦💦 Titanz ʙᴏᴛ 💦💦💦" + "\n" + \
-                    "╰════════╬💦╬════════╯"
+                    "╭════════╬╬════════╮" + "\n" + \
+                    "       sᴇᴘʀɪ ʙᴏᴛ" + "\n" + \
+                    "╰════════╬╬════════╯"
     return helpMessage
 
 def clientBot(op):
@@ -657,39 +657,39 @@ def clientBot(op):
                                 helpMessage = helpmessage()
                                 titanz.sendMessage(to, str(helpMessage))
                             if cmd == "oa ecchi":
-                                titanz.sendMessage(to,"ADD Official Account Ecchi Lovers")
-                                titanz.sendContact(to,"ubd5c94536d3f8cbf00e29fd784c4a9cf")
+                                titanz.sendMessage(to,"ᴛᴇᴀᴍ ʜᴀᴄᴋʙᴏᴛ ʀᴇsɪᴅɪᴠɪs ᴋɪʟʟᴇʀ")
+                                titanz.sendContact(to,"u9f09cfcb17d037e2936b751bd9d40ead")
                             if cmd == "creator":
-                                titanz.sendMessage(to,"Contact Dibawah Ini \nAdalah Creator Titanz Bot")
-                                titanz.sendContact(to,"u3986caa1a897a19a2096d84d2915b82f")
+                                titanz.sendMessage(to,"")
+                                titanz.sendContact(to,"u9f09cfcb17d037e2936b751bd9d40ead")
                             elif cmd == "speed":
                                 start = time.time()
-                                titanz.sendMessage(to, "Checking Speed Titanz bot...")
+                                titanz.sendMessage(to, "ᴄʜᴇᴄᴋ sᴘᴇᴇᴅ sᴇᴘʀɪʙᴏᴛ...")
                                 elapsed_time = time.time() - start
                                 titanz.sendMessage(to, "[ Speed ]\n{} seconds".format(str(elapsed_time)))
                             elif cmd == "runtime":
                                 timeNow = time.time()
                                 runtime = timeNow - botStart
                                 runtime = format_timespan(runtime)
-                                titanz.sendMessage(to, "Titanz Bot Has Been Run {}".format(str(runtime)))
+                                titanz.sendMessage(to, "sᴇᴘʀɪ ʙᴏᴛ Has Been Run {}".format(str(runtime)))
                             elif cmd == 'about':
                                 try:
                                     arr = []
-                                    owner = "u3986caa1a897a19a2096d84d2915b82f"
+                                    owner = "u9f09cfcb17d037e2936b751bd9d40ead"
                                     creator = titanz.getContact(owner)
                                     contact = titanz.getContact(titanzMID)
                                     grouplist = titanz.getGroupIdsJoined()
                                     contactlist = titanz.getAllContactIds()
                                     blockedlist = titanz.getBlockedContactIds()
-                                    ret_ = "╔══[ About Protection Bot Inojin ]"
+                                    ret_ = "╔══[ sᴇᴘʀɪ ʙᴏᴛ ]"
                                     ret_ += "\n╠ Name : {}".format(contact.displayName)
                                     ret_ += "\n╠ Group : {}".format(str(len(grouplist)))
                                     ret_ += "\n╠ Friend : {}".format(str(len(contactlist)))
                                     ret_ += "\n╠ Blocked : {}".format(str(len(blockedlist)))
-                                    ret_ += "\n╠══[ About Protection Bot Inojin ]"
+                                    ret_ += "\n╠══[ sᴇᴘʀɪ ʙᴏᴛ ]"
                                     ret_ += "\n╠ Version : Premium"
                                     ret_ += "\n╠ Creator : {}".format(creator.displayName)
-                                    ret_ += "\n╚══[ About Protection Bot Inojin ]"
+                                    ret_ += "\n╚══[ sᴇᴘʀɪ ʙᴏᴛ ]"
                                     titanz.sendMessage(msg.to, "Special Thanks To\n\n-Author LinePy\n-HelloWorld\n-Bot Eater\n-NadyaTj\n-All My Friends")
                                     titanz.sendMessage(to, str(ret_))
                                 except Exception as e:
@@ -724,7 +724,7 @@ def clientBot(op):
                                     else: ret_ += "\n╠══[ OFF ] Cancel Protect"
                                     if settings["autoJoin"] == True: ret_ += "\n╠══[ ON ] Auto Join"
                                     else: ret_ += "\n╠══[ OFF ] Auto Join"
-                                    ret_ += "\n╚══[ Status ]"
+                                    ret_ += "\n╚══[ sᴇᴘʀɪ ʙᴏᴛ ]"
                                     titanz.sendMessage(to, str(ret_))
                                 except Exception as e:
                                     titanz.sendMessage(msg.to, str(e))
@@ -893,18 +893,18 @@ def clientBot(op):
                                     ki5.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
 #------------------------------Respon Command--------------------------#
                             elif text.lower() == "respon":
-                                    titanz.sendMessage(msg.to, "titanz Bot Reponse")
-                                    ki.sendMessage(msg.to, "titanz Bot Protect Is Actived")
-                                    ki2.sendMessage(msg.to, "titanz Bot Was Here")
-                                    ki3.sendMessage(msg.to, "titanz Bot Was Here Too")
-                                    ki4.sendMessage(msg.to, "All Was Here Mother Fucker")
-                                    titanz1.sendMessage(msg.to, "Ready To Protect This Groups")
+                                    titanz.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
+                                    ki.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
+                                    ki2.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
+                                    ki3.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
+                                    ki4.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
+                                    titanz1.sendMessage(msg.to, "ʀᴇᴀᴅʏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ")
                             elif text.lower() == 'clearban':
                                 if msg._from in Owner:
                                     settings["blacklist"] = {}
                                     titanz.sendMessage(msg.to,"Blacklist Dibersihkan")
 #------------------------------Join Command---------------------------#
-                            elif text.lower() in ["titanz masuk"]:
+                            elif text.lower() in ["Masuk"]:
                                 if msg._from in Owner:    
                                     G = titanz.getGroup(msg.to)
                                     ginfo = titanz.getGroup(msg.to)
@@ -922,7 +922,7 @@ def clientBot(op):
                                     titanz.updateGroup(G)
                                     G.preventedJoinByTicket(G)
                                     titanz.updateGroup(G)
-                            elif text.lower() in ["titanz out"]:
+                            elif text.lower() in ["byeall"]:
                                 if msg._from in Owner:   								
                                     ki.leaveGroup(msg.to)
                                     ki2.leaveGroup(msg.to)
@@ -1236,7 +1236,7 @@ def clientBot(op):
                                 ret_ += "\n╚══[ Finish ]"
                                 titanz.sendMessage(to, str(ret_))
                             except:
-                                titanz.sendMessage(to, "Post tidak valid")
+                                titanz.sendMessage(to, "🙄🙄🙄")
             except Exception as error:
                 logError(error)
                 traceback.print_tb(error.__traceback__)

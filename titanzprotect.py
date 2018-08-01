@@ -100,8 +100,8 @@ ki5MID = ki5.profile.mid
 #JANGAN DIHAPUS MID INI NGENTOD
 Bots = [titanz,titanz1,kiMID,ki2MID,ki3MID,ki4MID,ki5MID]
 creator = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
-Owner = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
-admin = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
+Owner = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead","ud09e25c0ca9489be645b4afb00c27ee4","u3ba3da3a783bfd317d37f0d5f4ac20a2","uad49d6940b08ddae2a506e5a822c2aae","u4dea393659914ff968fab78963a6495d","u970bb76e49958f3d9e980e3a8e6ac36a","uc5676bcfe5b7409487dc9b129dd17909","u81196d0a27964b33b2123cfe165d7b36","uea36cc53121bef94d1e01ccc5dd29018","u91bb57b10dabe43801a6fffe8ad89340",]
+admin = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead","ud09e25c0ca9489be645b4afb00c27ee4","u3ba3da3a783bfd317d37f0d5f4ac20a2","uad49d6940b08ddae2a506e5a822c2aae","u4dea393659914ff968fab78963a6495d","u970bb76e49958f3d9e980e3a8e6ac36a","uc5676bcfe5b7409487dc9b129dd17909","u81196d0a27964b33b2123cfe165d7b36","uea36cc53121bef94d1e01ccc5dd29018","u91bb57b10dabe43801a6fffe8ad89340",]
 
 settings = {
     "wblack": False,

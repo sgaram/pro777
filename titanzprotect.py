@@ -28,14 +28,14 @@ import timeit
  #                       Chat Creator Titanz Bot Jika Mengalami Error 						#
  #------------------------------------------------------------------------------------------#
 
-titanz = LINE("EvTS2oby6YPMbuWGsZb8.yAM1ZO3J61gOwuemMdtLYa.NYpAUwfsDoveZRrvB2RGI0vloyo5OzqkByoMLfRi9lg=") #Akun Utama
+titanz = LINE("Evee7nmpiUAJIysjZ1jd.NWNpYXFqn/ktA3uB2DqoRq.BJttGBJSQbJIcfAQ6ZMLASiZGMCjV0bPUSAB91yy6gE=") #Akun Utama
 titanzMid = titanz.profile.mid
 titanzProfile = titanz.getProfile()
 titanzSettings = titanz.getSettings()
 titanzPoll = OEPoll(titanz)
 botStart = time.time()
 
-titanz1 = LINE("EvEVQLO78i9hFFODKTK7.rYQ2taYWmIaHwZoX6iKQ1W.exfNW1KWDc2oV/QLDefJqPXRHZ0TnmXc+Vp9V29uQME=") #Akun Khusus Reinvite Owner atau Assist
+titanz1 = LINE("Ev6fAaBxu342wF8DUcJf.K9hUseF6j4f/WE5DLTHHBW.1RlmVb73bJ30Q3aR5akTQytxTi0QHuLN3tqifsyhBys=") #Akun Khusus Reinvite Owner atau Assist
 titanz1Mid = titanz1.profile.mid
 titanz1Profile = titanz1.getProfile()
 titanz1Settings = titanz1.getSettings()
@@ -63,7 +63,7 @@ ki3Settings = ki3.getSettings()
 ki3Poll = OEPoll(ki3)
 botStart = time.time()
 
-ki4 = LINE("EvE5gN5SQWYezKPqieLf.K9hUseF6j4f/WE5DLTHHBW.fmW4IX9Geq6Pd17J4siBRvxrTuq18Znv12p84xS/mqc=") #Assist 4
+ki4 = LINE("EvSB50iaHJFETWXkqoS7.rYQ2taYWmIaHwZoX6iKQ1W.oDoaG3VzdsdmAV/XT2f4dNTwjb3W2LuUhMZ2HxHHNZQ=") #Assist 4
 ki4Mid = ki4.profile.mid
 ki4Profile = ki4.getProfile()
 ki4Settings = ki4.getSettings()

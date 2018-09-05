@@ -28,49 +28,49 @@ import timeit
  #                       Chat Creator Titanz Bot Jika Mengalami Error 						#
  #------------------------------------------------------------------------------------------#
 
-titanz = LINE("Evee7nmpiUAJIysjZ1jd.NWNpYXFqn/ktA3uB2DqoRq.BJttGBJSQbJIcfAQ6ZMLASiZGMCjV0bPUSAB91yy6gE=") #Akun Utama
+titanz = LINE("Ew4DO4KvCOIk0qRLDlk8.yAM1ZO3J61gOwuemMdtLYa.By18WiKvwA97DjiDMxDJYq9xhY3L251CrURRNo+MiOg=") #Akun Utama
 titanzMid = titanz.profile.mid
 titanzProfile = titanz.getProfile()
 titanzSettings = titanz.getSettings()
 titanzPoll = OEPoll(titanz)
 botStart = time.time()
 
-titanz1 = LINE("Ev6fAaBxu342wF8DUcJf.K9hUseF6j4f/WE5DLTHHBW.1RlmVb73bJ30Q3aR5akTQytxTi0QHuLN3tqifsyhBys=") #Akun Khusus Reinvite Owner atau Assist
+titanz1 = LINE("EwFFttCdPLOfgQTdLiY6.HQh4RpqRYzqfruxsRHZtfG.CHJsPhFbUbMHcnu/kUiIZsH9vUMlmmTN5ZP0L9oJ4rw=") #Akun Khusus Reinvite Owner atau Assist
 titanz1Mid = titanz1.profile.mid
 titanz1Profile = titanz1.getProfile()
 titanz1Settings = titanz1.getSettings()
 titanz1Poll = OEPoll(titanz1)
 botStart = time.time()
 
-ki = LINE("Evy7OCsYZ8chr5NMYgy6.BaiKNxR2VN7zWCBrQS6P5G.jl5NAyvvW9894OTD1Bk9U7gvYb/gc2WaypEAApxO36Q=") #Assist 1
+ki = LINE("EwNbighy0APfWQpVypW8.9b6szpiJ3KHyLZhfedasIa.wYjR3KomXqxhOJIqp2B+VrKLokBoLOQGResLNVQNFfA=") #Assist 1
 kiMid = ki.profile.mid
 kiProfile = ki.getProfile()
 kiSettings = ki.getSettings()
 kiPoll = OEPoll(ki)
 botStart = time.time()
 
-ki2 = LINE("Evu5s0D5n8nlvLrt84Ca.UHbbg4pHBjT5VwCYtXmXsG.AY3zejVR4B7uEU9kYp17X3+UG3koCdUS9SCslWdAoZA=") #Assist 2
+ki2 = LINE("EwjLYRn1YH2SlIM1sg15.fj0S/qYKVWGRwpehA8QPbq.mDSMyePdFeRN8jZTQcOQFXJuCeaifYAznkSyUltTMW4=") #Assist 2
 ki2Mid = ki2.profile.mid
 ki2Profile = ki2.getProfile()
 ki2Settings = ki2.getSettings()
 ki2Poll = OEPoll(ki2)
 botStart = time.time()
 
-ki3 = LINE("EvEk09kUJvUTXAUZNZWa.Oyj1ZAWaMt3CKaVDd5BW2G.0MUkEP4BZLuACIpJOn+KWtykglPbGlE5x5DCg+ZH0PA=") #Assist 3
+ki3 = LINE("Ewzos7QnoKyQOP1fusVf.K9hUseF6j4f/WE5DLTHHBW.3c5P4fuaR4cyroJkFfo0c65Ox/ZeBiYf0dx1uy8RR/w=") #Assist 3
 ki3Mid = ki3.profile.mid
 ki3Profile = ki3.getProfile()
 ki3Settings = ki3.getSettings()
 ki3Poll = OEPoll(ki3)
 botStart = time.time()
 
-ki4 = LINE("EvSB50iaHJFETWXkqoS7.rYQ2taYWmIaHwZoX6iKQ1W.oDoaG3VzdsdmAV/XT2f4dNTwjb3W2LuUhMZ2HxHHNZQ=") #Assist 4
+ki4 = LINE("EwufTE6ah7SjVNiZ7ikd.mKZbV5HoQB+/lk9EZno5+q.zRqxgtPxG12h8OzsksJ0IE//Ms95EsuKHy4vfpwK/Wc=") #Assist 4
 ki4Mid = ki4.profile.mid
 ki4Profile = ki4.getProfile()
 ki4Settings = ki4.getSettings()
 ki4Poll = OEPoll(ki4)
 botStart = time.time()
 
-ki5 = LINE("Evi2vObUZ3IgPfAr7b7f.eb8Fsy+dW4odT30yu3UjtW.5nMPYL3L5QFU6CStG8/WfNDT4KWM9mEJbgwA1LT0Pfo=") #Bot Kick Luar (Ghost)
+ki5 = LINE("EwPJOQI724NUy88UD8l9.t2D+Q8GQs5QI1aUzyFPrAq.0aYDa+4TSMPskCQiFbYeM+9xD0Q6BzHDVu4DZ4ZIjxs=") #Bot Kick Luar (Ghost)
 ki5Mid = ki5.profile.mid
 ki5Profile = ki5.getProfile()
 ki5Settings = ki5.getSettings()
@@ -100,7 +100,7 @@ ki5MID = ki5.profile.mid
 #JANGAN DIHAPUS MID INI NGENTOD
 Bots = [titanz,titanz1,kiMID,ki2MID,ki3MID,ki4MID,ki5MID]
 creator = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
-Owner = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead","ud09e25c0ca9489be645b4afb00c27ee4","u3ba3da3a783bfd317d37f0d5f4ac20a2","uad49d6940b08ddae2a506e5a822c2aae","u4dea393659914ff968fab78963a6495d","u970bb76e49958f3d9e980e3a8e6ac36a","uc5676bcfe5b7409487dc9b129dd17909","u81196d0a27964b33b2123cfe165d7b36","uea36cc53121bef94d1e01ccc5dd29018","u91bb57b10dabe43801a6fffe8ad89340",]
+Owner = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
 admin = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead","ud09e25c0ca9489be645b4afb00c27ee4","u3ba3da3a783bfd317d37f0d5f4ac20a2","uad49d6940b08ddae2a506e5a822c2aae","u4dea393659914ff968fab78963a6495d","u970bb76e49958f3d9e980e3a8e6ac36a","uc5676bcfe5b7409487dc9b129dd17909","u81196d0a27964b33b2123cfe165d7b36","uea36cc53121bef94d1e01ccc5dd29018","u91bb57b10dabe43801a6fffe8ad89340",]
 
 settings = {
@@ -904,7 +904,7 @@ def clientBot(op):
                                     settings["blacklist"] = {}
                                     titanz.sendMessage(msg.to,"Blacklist Dibersihkan")
 #------------------------------Join Command---------------------------#
-                            elif text.lower() in ["Masuk"]:
+                            elif text.lower() in ["masuk"]:
                                 if msg._from in Owner:    
                                     G = titanz.getGroup(msg.to)
                                     ginfo = titanz.getGroup(msg.to)
@@ -1059,7 +1059,7 @@ def clientBot(op):
                                 else:
                                     titanz.sendMessage(msg.to,"Tunggu...")
                                     mc = ""
-                                    mc = "╔══[ Owner Titanz Bot Protect ]"
+                                    mc = "╔══[ Owner Bot Protect ]"
                                     for mi_d in Owner:
                                         mc += "\n╠ "+titanz.getContact(mi_d).displayName + "\n"
                                     mc += "╚══[ Finish ]"
@@ -1070,7 +1070,7 @@ def clientBot(op):
                                 else:
                                     titanz.sendMessage(msg.to,"Tunggu...")
                                     mc = ""
-                                    mc = "╔══[ Staff Titanz Bot Protect ]"
+                                    mc = "╔══[ Staff Bot Protect ]"
                                     for mi_d in admin:
                                         mc += "\n╠ "+titanz.getContact(mi_d).displayName + "\n"
                                     mc += "╚══[ Finish ]"
@@ -1302,7 +1302,7 @@ def clientBot(op):
                                 for mention in mentionees:
                                     if titanzMid in mention["M"]:
                                         if settings["autoRespon"] == True:
-                                            sendMention(sender, "Oi Asw @!,jangan main tag tag", [sender])
+                                            sendMention(sender, "Oit @!,hadir", [sender])
                                     break
             except Exception as error:
                 logError(error)

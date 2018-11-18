@@ -14,94 +14,61 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 import subprocess
 import timeit
 
-#Done Fixed Bots Reinvite Owner,Admin,Assist
-
-#Penambahan 1 Assist
-
- #---------------------------------Please Dont Edit The Creator-----------------------------#
- #                  					Titanz Bot Protect									#
- #                 Tolong Hargai Creator Bot Ini 											#
- #                                              Jangan Edit Creator Nya :"(					#
- #                 Jangan Sombong Memakai Bot Orang 										#
- #                                              Ini Bot Free , Not For Sale					#
- #			       Creator Titanz Bot : Ferianss / https://line.me/ti/p/YFBy7TqfVg			#
- #                       Chat Creator Titanz Bot Jika Mengalami Error 						#
- #------------------------------------------------------------------------------------------#
-
-titanz = LINE("Ew4DO4KvCOIk0qRLDlk8.yAM1ZO3J61gOwuemMdtLYa.By18WiKvwA97DjiDMxDJYq9xhY3L251CrURRNo+MiOg=") #Akun Utama
-titanzMid = titanz.profile.mid
-titanzProfile = titanz.getProfile()
-titanzSettings = titanz.getSettings()
-titanzPoll = OEPoll(titanz)
+sc1 = LINE("EzD2VtmJZqSQuxSYULCc.Uv/0YYcEoAwu5rWj4Sx9Ja.KtwDgO6+EDMv4I9Bj7OFteu7v2yJ4bSXlubAJ6LQkVw=") #Akun Utama
+sc1Mid = sc1.profile.mid
+sc1Profile = sc1.getProfile()
+sc1Settings = sc1.getSettings()
+sc1Poll = OEPoll(sc1)
 botStart = time.time()
 
-titanz1 = LINE("EwFFttCdPLOfgQTdLiY6.HQh4RpqRYzqfruxsRHZtfG.CHJsPhFbUbMHcnu/kUiIZsH9vUMlmmTN5ZP0L9oJ4rw=") #Akun Khusus Reinvite Owner atau Assist
-titanz1Mid = titanz1.profile.mid
-titanz1Profile = titanz1.getProfile()
-titanz1Settings = titanz1.getSettings()
-titanz1Poll = OEPoll(titanz1)
+cl = LINE("EzqxUlHa7fJ4CK6nW2Af.XzmbAwonn5keEY4vw/uKlW.gnHUb4aVq0LJzAvMilB/sugwliFTEMHOrIDaibzLnXc=") 
+clMid = cl.profile.mid
+clProfile = cl.getProfile()
+clSettings = cl.getSettings()
+clPoll = OEPoll(cl)
 botStart = time.time()
 
-ki = LINE("EwNbighy0APfWQpVypW8.9b6szpiJ3KHyLZhfedasIa.wYjR3KomXqxhOJIqp2B+VrKLokBoLOQGResLNVQNFfA=") #Assist 1
+ki = LINE("EzqfkU8n35nOkRW0tGf0.9T/PGPFdadrWbCl3Gzx/Ga.t6314tHfihMLXerKkc88/Z9D22vxibAI7fbMi5A6VZ0=")
 kiMid = ki.profile.mid
 kiProfile = ki.getProfile()
 kiSettings = ki.getSettings()
 kiPoll = OEPoll(ki)
 botStart = time.time()
 
-ki2 = LINE("EwjLYRn1YH2SlIM1sg15.fj0S/qYKVWGRwpehA8QPbq.mDSMyePdFeRN8jZTQcOQFXJuCeaifYAznkSyUltTMW4=") #Assist 2
-ki2Mid = ki2.profile.mid
-ki2Profile = ki2.getProfile()
-ki2Settings = ki2.getSettings()
-ki2Poll = OEPoll(ki2)
+kk = LINE("EzwkQRV4ikVFeHlbZFYd.tLlReCirgG96uB+Q5pwO+q.T05h54NBMRTj44/an2PUZ53WvWA4EINswnGhb7GNuZA=")
+kkMid = kk.profile.mid
+kkProfile = kk.getProfile()
+kkSettings = kk.getSettings()
+kkPoll = OEPoll(kk)
 botStart = time.time()
 
-ki3 = LINE("Ewzos7QnoKyQOP1fusVf.K9hUseF6j4f/WE5DLTHHBW.3c5P4fuaR4cyroJkFfo0c65Ox/ZeBiYf0dx1uy8RR/w=") #Assist 3
-ki3Mid = ki3.profile.mid
-ki3Profile = ki3.getProfile()
-ki3Settings = ki3.getSettings()
-ki3Poll = OEPoll(ki3)
+kc = LINE("Ezx1c4NT2uh6K9ET9191.lXZ4ob/KwrCUJfHRJ603qq.T2l+rfV80gtnFaUpLCHPD9Zft8QBagBPIIRmyj/g6X8=")
+kcMid = kc.profile.mid
+kcProfile = kc.getProfile()
+kcSettings = kc.getSettings()
+kcPoll = OEPoll(kc)
 botStart = time.time()
 
-ki4 = LINE("EwufTE6ah7SjVNiZ7ikd.mKZbV5HoQB+/lk9EZno5+q.zRqxgtPxG12h8OzsksJ0IE//Ms95EsuKHy4vfpwK/Wc=") #Assist 4
-ki4Mid = ki4.profile.mid
-ki4Profile = ki4.getProfile()
-ki4Settings = ki4.getSettings()
-ki4Poll = OEPoll(ki4)
-botStart = time.time()
-
-ki5 = LINE("EwPJOQI724NUy88UD8l9.t2D+Q8GQs5QI1aUzyFPrAq.0aYDa+4TSMPskCQiFbYeM+9xD0Q6BzHDVu4DZ4ZIjxs=") #Bot Kick Luar (Ghost)
-ki5Mid = ki5.profile.mid
-ki5Profile = ki5.getProfile()
-ki5Settings = ki5.getSettings()
-ki5Poll = OEPoll(ki5)
-botStart = time.time()
-
-responsename = titanz.getProfile().displayName
+responsename = sc1.getProfile().displayName
+responsename1 = cl.getProfile().displayName
 responsename2 = ki.getProfile().displayName
-responsename3 = ki2.getProfile().displayName
-responsename4 = ki3.getProfile().displayName
-responsename5 = ki4.getProfile().displayName
-responsename6 = ki5.getProfile().displayName
+responsename3 = kk.getProfile().displayName
+responsename4 = kc.getProfile().displayName
 
 
 msg_dict = {}
 
-KAC = [titanz,titanz1,ki,ki2,ki3,ki4]
-titanzMID = titanz.profile.mid
-titanz1MID = titanz1.profile.mid
+KAC = [sc1,cl,ki,kk,kc]
+sc1MID = sc1.profile.mid
+clMID = cl.profile.mid
 kiMID = ki.profile.mid
-ki2MID = ki2.profile.mid
-ki3MID = ki3.profile.mid
-ki4MID = ki4.profile.mid
-ki5MID = ki5.profile.mid
+kkMID = kk.profile.mid
+kcMID = kc.profile.mid
 
-#TAMBAHIN MID KAMU AJA 
-#JANGAN DIHAPUS MID INI NGENTOD
-Bots = [titanz,titanz1,kiMID,ki2MID,ki3MID,ki4MID,ki5MID]
-creator = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
-Owner = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead"]
-admin = ["u61a9b5ce8de3eb51a859410c9834e5c8","u9f09cfcb17d037e2936b751bd9d40ead","ud09e25c0ca9489be645b4afb00c27ee4","u3ba3da3a783bfd317d37f0d5f4ac20a2","uad49d6940b08ddae2a506e5a822c2aae","u4dea393659914ff968fab78963a6495d","u970bb76e49958f3d9e980e3a8e6ac36a","uc5676bcfe5b7409487dc9b129dd17909","u81196d0a27964b33b2123cfe165d7b36","uea36cc53121bef94d1e01ccc5dd29018","u91bb57b10dabe43801a6fffe8ad89340",]
+Bots = [sc1,cl,kiMID,kkMID,kcMID]
+creator = ["u9f09cfcb17d037e2936b751bd9d40ead"]
+Owner = ["u9f09cfcb17d037e2936b751bd9d40ead"]
+admin = ["u9f09cfcb17d037e2936b751bd9d40ead"]
 
 settings = {
     "wblack": False,
@@ -110,11 +77,11 @@ settings = {
     "wblacklist": False,
     "dblacklist": False,
     "autoAdd": True,
-    "inviteprotect": True,
-    "protect": True,
-    "qrprotect": True,
-    "cancelprotect": True,
-    "Wc": True,
+    "inviteprotect": False,
+    "protect": False,
+    "qrprotect": False,
+    "cancelprotect": False,
+    "Wc": False,
     "limit": 50,
     "limits": 50,
     "lang":"JP",
@@ -125,8 +92,8 @@ settings = {
     "autoRespon": False,
     "responMention": False,
     "autoJoinTicket": False,
-    "checkContact": True,
-    "checkPost": True,
+    "checkContact": False,
+    "checkPost": False,
     "checkSticker": False,
     "changePictureProfile": False,
     "changeGroupPicture": [],
@@ -189,10 +156,10 @@ except:
 setTime = {}
 setTime = read['readTime']
    
-settings["myProfile"]["displayName"] = titanzProfile.displayName
-settings["myProfile"]["statusMessage"] = titanzProfile.statusMessage
-settings["myProfile"]["pictureStatus"] = titanzProfile.pictureStatus
-coverId = titanz.getProfileDetail()["result"]["objectId"]
+settings["myProfile"]["displayName"] = sc1Profile.displayName
+settings["myProfile"]["statusMessage"] = sc1Profile.statusMessage
+settings["myProfile"]["pictureStatus"] = sc1Profile.pictureStatus
+coverId = sc1.getProfileDetail()["result"]["objectId"]
 settings["myProfile"]["coverId"] = coverId
 
 def restartBot():
@@ -210,7 +177,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
     messageReq[to] += 1
 
 def logError(text):
-    titanz.log("[ ERROR ] {}".format(str(text)))
+    sc1.log("[ ERROR ] {}".format(str(text)))
     tz = pytz.timezone("Asia/Jakarta")
     timeNow = datetime.now(tz=tz)
     timeHours = datetime.strftime(timeNow,"(%H:%M)")
@@ -238,13 +205,13 @@ def delete_log():
     for data in msg_dict:
         if (datetime.utcnow() - cTime_to_datetime(msg_dict[data]["createdTime"])) > timedelta(1):
             if "path" in msg_dict[data]:
-                titanz.deleteFile(msg_dict[data]["path"])
+                sc1.deleteFile(msg_dict[data]["path"])
             del msg_dict[data]
             
 def sendMention(to, text="", mids=[]):
     arrData = ""
     arr = []
-    mention = "@titanzbot "
+    mention = "@sc1bot "
     if mids == []:
         raise Exception("Invalid mids")
     if "@!" in text:
@@ -267,7 +234,7 @@ def sendMention(to, text="", mids=[]):
         arrData = {'S':str(slen), 'E':str(elen - 4), 'M':mids[0]}
         arr.append(arrData)
         textx += mention + str(text)
-    titanz.sendMessage(to, textx, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+    sc1.sendMessage(to, textx, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
 
 def command(text):
     pesan = text.lower()
@@ -299,12 +266,12 @@ def siderMembers(to, mid):
                 num=(num+1)
             else:
                 try:
-                    no = "\nâ•šâ•â•[ {} ]".format(str(titanz.getGroup(to).name))
+                    no = "\nâ•šâ•â•[ {} ]".format(str(sc1.getGroup(to).name))
                 except:
                     no = "\nâ•šâ•â•[ Success ]"
-        titanz.sendMessage(to, textx, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
+        sc1.sendMessage(to, textx, {'MENTION': str('{"MENTIONEES":' + json.dumps(arr) + '}')}, 0)
     except Exception as error:
-        titanz.sendMessage(to, "[ INFO ] Error :\n" + str(error))
+        sc1.sendMessage(to, "[ INFO ] Error :\n" + str(error))
 
 def helpmessage():
     if settings['setKey'] == True:
@@ -320,8 +287,8 @@ def helpmessage():
                     "╠☞ " + key + "InvProtect 「On/Off」" + "\n" + \
                     "╠☞ " + key + "CancelProtect 「On/Off」" + "\n" + \
                     "╠☞ " + key + "SetPro 「On/Off」" + "\n" + \
-                    "╠☞ " + key + "Titanz Masuk" + "\n" + \
-                    "╠☞ " + key + "Titanz Out" + "\n" + \
+                    "╠☞ " + key + "sc1 Masuk" + "\n" + \
+                    "╠☞ " + key + "sc1 Out" + "\n" + \
                     "╠══[ Staff Add/Del Command ]" + "\n" + \
                     "║☞ " + key + "Staff add 「Mention」" + "\n" + \
                     "║☞ " + key + "Staff del 「Mention」" + "\n" + \
@@ -348,182 +315,134 @@ def clientBot(op):
 
         if op.type == 5:
             if wait["autoAdd"] == True:
-                titanz.findAndAddContactsByMid(op.param1)
+                sc1.findAndAddContactsByMid(op.param1)
                 if (wait["message"] in [""," ","\n",None]):
                     pass
                 else:
-                    titanz.sendMessage(op.param1,str(wait["message"]))
+                    sc1.sendMessage(op.param1,str(wait["message"]))
 
         if op.type == 5:
             print ("INFO SELBOT : ADA YANG ADD")
             if settings["autoAdd"] == True:
-                titanz.sendMessage(op.param1, "Thanks For Add Me {} \nBot By Inojin\nOwner : https://line.me/ti/p/YFBy7TqfVg".format(str(client.getContact(op.param1).displayName)))
-        if op.type == 11:
-            if op.param1 :
-                try:
-                    if titanz.getGroup(op.param1).preventedJoinByTicket == True:
-                            clien.reissueGroupTicket(op.param1)
-                            X = titanz.getGroup(op.param1)
-                            titanz.updateGroup(X)
-                except:
-                    pass
+                sc1.sendMessage(op.param1, "Thanks For Add Me")
 
         if op.type == 19:
                 if op.param2 not in Bots:
-                    if op.param2 in Owner + admin + Bots:
+                    if op.param2 not in Owner + admin:
                             pass
                     elif settings["protect"] == True:
                         settings["blacklist"][op.param2] = True
-                        G = titanz1.getGroup(op.param1)
+                        random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+                        G = cl.getGroup(op.param1)
                         G.preventedJoinByTicket = False
-                        titanz1.updateGroup(G)
+                        cl.updateGroup(G)
                         invsend = 0
-                        Ticket = titanz1.reissueGroupTicket(op.param1)
-                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ki5.sendMessage(op.param1,"This Groups Has Been Protected!!")
-                        ki5.kickoutFromGroup(op.param1,[op.param2])
-                        titanz1.inviteIntoGroup(op.param1,[op.param3])
-                        ki5.leaveGroup(op.param1)
-                        random.choice(KAC).acceptGroupInvitation(op.param1)
-                        G = titanz1.getGroup(op.param1)
+                        Ticket = cl.reissueGroupTicket(op.param1)
+                        cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        sc1.acceptGroupInvitationByTicket(op.param1,Ticket)
+                        random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
+                        G = ki.getGroup(op.param1)
                         G.preventedJoinByTicket = True
-                        titanz1.updateGroup(G)
+                        ki.updateGroup(G)
                         G.preventedJoinByTicket(G)
-                        titanz1.updateGroup(G)
-
-        if op.type == 19:
-                if op.param2 not in admin + Bots:
-                    if op.param2 in Bots:
-                            pass
-                    elif settings["protect"] == True:
-                        settings["blacklist"][op.param2] = True
-                        G = titanz1.getGroup(op.param1)
-                        G.preventedJoinByTicket = False
-                        titanz1.updateGroup(G)
-                        invsend = 0
-                        Ticket = titanz1.reissueGroupTicket(op.param1)
-                        ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
-                        ki5.sendMessage(op.param1,"This Groups Has Been Protected!!")
-                        ki5.kickoutFromGroup(op.param1,[op.param2])
-                        titanz1.inviteIntoGroup(op.param1,[op.param3])
-                        ki5.leaveGroup(op.param1)
-                        random.choice(KAC).acceptGroupInvitation(op.param1)
-                        G = titanz1.getGroup(op.param1)
-                        G.preventedJoinByTicket = True
-                        titanz1.updateGroup(G)
-                        G.preventedJoinByTicket(G)
-                        titanz1.updateGroup(G)
+                        ki.updateGroup(G)
 
         if op.type == 13:
             if op.param2 not in Bots:
-                if op.param2 in Owner + admin:
+                if op.param2 not in Owner + admin:
                     pass
                 elif settings["inviteprotect"] == True:
                     settings["blacklist"][op.param2] = True
                     random.choice(KAC).cancelGroupInvitation(op.param1,[op.param3])
+                    random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
                     if op.param2 not in Bots:
                         if op.param2 in Owner + admin:
                             pass
                         elif settings["cancelprotect"] == True:
                             settings["blacklist"][op.param2] = True
                             random.choice(KAC).cancelGroupInvitation(op.param1,[op.param3])
-
-        if op.type == 13:
-            if op.param2 not in Bots:
-                if op.param2 in Owner + admin:
-                    pass
-                elif settings["inviteprotect"] == True:
-                    settings["blacklist"][op.param2] = True
-                    random.choice(KAC).cancelGroupInvitation(op.param1,[op.param3])
-                    if op.param2 not in Bots:
-                        if op.param2 in Owner + admin:
-                            pass
-                        elif settings["cancelprotect"] == True:
-                            settings["blacklist"][op.param2] = True
-                            random.choice(KAC).cancelGroupInvitation(op.param1,[op.param3])	
+                            random.choice(KAC).kickoutFromGroup(op.param1,[op.param2])
 
         if op.type == 26:
             msg = op.message
             if msg.contentType == 13:
                 if settings["wblack"] == True:
                     if msg.contentMetadata["mid"] in settings["commentBlack"]:
-                        titanz.sendMessage(msg.to,"sudah masuk daftar hitam")
+                        sc1.sendMessage(msg.to,"sudah masuk daftar hitam")
                         settings["wblack"] = False
                     else:
                         settings["commentBlack"][msg.contentMetadata["mid"]] = True
                         settings["wblack"] = False
-                        titanz.sendMessage(msg.to,"Itu tidak berkomentar")
+                        sc1.sendMessage(msg.to,"Itu tidak berkomentar")
                 elif settings["dblack"] == True:
                     if msg.contentMetadata["mid"] in settings["commentBlack"]:
                         del settings["commentBlack"][msg.contentMetadata["mid"]]
-                        titanz.sendMessage(msg.to,"Done")
+                        sc1.sendMessage(msg.to,"Done")
                         settings["dblack"] = False
                     else:
                         settings["dblack"] = False
-                        titanz.sendMessage(msg.to,"Tidak ada dalam daftar hitam")
+                        sc1.sendMessage(msg.to,"Tidak ada dalam daftar hitam")
                 elif settings["wblacklist"] == True:
                     if msg.contentMetadata["mid"] in settings["blacklist"]:
-                        titanz.sendMessage(msg.to,"sudah masuk daftar hitam")
+                        sc1.sendMessage(msg.to,"sudah masuk daftar hitam")
                         settings["wblacklist"] = False
                     else:
                         settings["blacklist"][msg.contentMetadata["mid"]] = True
                         settings["wblacklist"] = False
-                        titanz.sendMessage(msg.to,"Done")
+                        sc1.sendMessage(msg.to,"Done")
                         
                 elif settings["dblacklist"] == True:
                     if msg.contentMetadata["mid"] in settings["blacklist"]:
                         del settings["blacklist"][msg.contentMetadata["mid"]]
-                        titanz.sendMessage(msg.to,"Done")
+                        sc1.sendMessage(msg.to,"Done")
                         settings["dblacklist"] = False
                     else:
                         settings["dblacklist"] = False
-                        titanz.sendMessage(msg.to,"Done")
+                        sc1.sendMessage(msg.to,"Done")
 
         if op.type == 11:
             if op.param2 not in Bots:
-                if op.param2 in Owner + admin + Bots:
+                if op.param2 not in Owner + admin + Bots:
                     pass
                 elif settings["qrprotect"] == True:
                     settings["blacklist"][op.param2] = True
-                    G = titanz.getGroup(op.param1)
+                    G = sc1.getGroup(op.param1)
                     G.preventedJoinByTicket = True
-                    Ticket = titanz.reissueGroupTicket(op.param1)
-                    ki5.acceptGroupInvitationByTicket(op.param1,Ticket)
-                    ki5.kickoutFromGroup(op.param1,[op.param2])
-                    ki5.leaveGroup(op.param1)
-                    random.choice(KAC).inviteIntoGroup(op.param1,[op.param3])
-                    random.choice(KAC).acceptGroupInvitation(op.param1)
-                    G = titanz.getGroup(msg.to)
+                    Ticket = sc1.reissueGroupTicket(op.param1)
+                    sc1.acceptGroupInvitationByTicket(op.param1,Ticket)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ticket)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ticket)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ticket)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ticket)
+                    G = sc1.getGroup(msg.to)
                     G.preventedJoinByTicket = False
-                    titanz.updateGroup(G)
+                    sc1.updateGroup(G)
                     G.preventedJoinByTicket(G)
-                    titanz.updateGroup(G)
+                    sc1.updateGroup(G)
                 else:
-                    titanz.sendMessage(op.param1,"Dont Play QR This Already Protect")
+                    sc1.sendMessage(op.param1,"Dont Play QR This Already Protect")
             else:
-                titanz.sendMessage(op.param1,"")
+                sc1.sendMessage(op.param1,"")
 
         if op.type == 13:
             print ("[ 13 ] Invite Into Group")
-            if titanzMid in op.param3:
+            if sc1Mid in op.param3:
                 if settings["autoJoin"] == True:
-                    titanz.acceptGroupInvitation(op.param1)
-                dan = titanz.getContact(op.param2)
-                tgb = titanz.getGroup(op.param1)
-                sendMention(op.param1, "Hallo @!, Thanks for invite me to your groups".format(str(tgb.name)),[op.param2])
-                titanz.sendImageWithURL(op.param1, "http://dl.profile.line-cdn.net{}".format(dan.picturePath))
-                titanz.sendContact(op.param1, op.param2)
+                    sc1.acceptGroupInvitation(op.param1)
 
         if op.type == 13:
             print ("INFO SELBOT : ADA YANG INVITE GRUP")
-            group = titanz.getGroup(op.param1)
+            group = sc1.getGroup(op.param1)
             if settings["autoJoin"] == True:
-                titanz.acceptGroupInvitation(op.param1)
+                sc1.acceptGroupInvitation(op.param1)
 
         if op.type == 17:
             print ("MEMBER HAS JOIN THE GROUP")
             if settings["autoJoin"] == True:
-               ginfo = titanz.getGroup(op.param1)
+               ginfo = sc1.getGroup(op.param1)
 
         if op.type == 19:
             if Bots in op.param3:
@@ -558,12 +477,12 @@ def clientBot(op):
                 G.preventJoinByTicket = False
                 ki.updateGroup(G)
                 Ticket = random.choice(KAC).reissueGroupTicket(op.param1)
-                titanz.acceptGroupInvitationByTicket(op.param1,Ticket)
+                sc1.acceptGroupInvitationByTicket(op.param1,Ticket)
                 time.sleep(0.1)
                 G.preventJoinByTicket = True
                 random.choice(KAC).updateGroup(G)
-                titanz.updateGroup(G)
-            if op.param3 in titanzMid + kiMID + ki2MID + ki3MID + ki4MID:
+                sc1.updateGroup(G)
+            if op.param3 in sc1Mid + kiMID + kkMID + kcMID:
                 G = random.choice(KAC).getGroup(msg.to)
                 ginfo = random.choice(KAC).getGroup(msg.to)
                 G.preventedJoinByTicket = False
@@ -571,9 +490,8 @@ def clientBot(op):
                 invsend = 0
                 Ticket = random.choice(KAC).reissueGroupTicket(msg.to)
                 ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
-                ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
-                ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
+                kk.acceptGroupInvitationByTicket(msg.to,Ticket)
+                kc.acceptGroupInvitationByTicket(msg.to,Ticket)
                 G = random.choice(KAC).getGroup(msg.to)
                 G.preventedJoinByTicket = True
                 random.choice(KAC).updateGroup(G)
@@ -598,12 +516,12 @@ def clientBot(op):
             	if wait["winvite"] == True:
                          _name = msg.contentMetadata["displayName"]
                          invite = msg.contentMetadata["mid"]
-                         groups = ki2.getGroup(msg.to)
+                         groups = kk.getGroup(msg.to)
                          pending = groups.invitee
                          targets = []
                          for s in groups.members:
                              if _name in s.displayName:
-                                 ki2.sendMessage(msg.to,"-> " + _name + " was here")
+                                 kk.sendMessage(msg.to,"-> " + _name + " was here")
                                  break                             
                              else:
                                  targets.append(invite)
@@ -612,18 +530,18 @@ def clientBot(op):
                          else:
                              for target in targets:
                                  try:
-                                     ki2.findAndAddContactsByMid(target)
-                                     ki2.inviteIntoGroup(msg.to,[target])
-                                     ki2.sendMessage(msg.to,"Done Invite : \n➡" + _name)
+                                     kk.findAndAddContactsByMid(target)
+                                     kk.inviteIntoGroup(msg.to,[target])
+                                     kk.sendMessage(msg.to,"Done Invite : \n➡" + _name)
                                      wait["winvite"] = False
                                      break
                                  except:
                                      try:
-                                         ki2.findAndAddContactsByMid(invite)
-                                         ki2.inviteIntoGroup(op.param1,[invite])
+                                         kk.findAndAddContactsByMid(invite)
+                                         kk.inviteIntoGroup(op.param1,[invite])
                                          wait["winvite"] = False
                                      except:
-                                         ki2.sendMessage(msg.to,"Negative, Error detected")
+                                         kk.sendMessage(msg.to,"Negative, Error detected")
                                          wait["winvite"] = False
                                          break
 
@@ -640,7 +558,7 @@ def clientBot(op):
                     setKey = ''
                 if msg.toType == 0 or msg.toType == 1 or msg.toType == 2:
                     if msg.toType == 0:
-                        if sender != titanz.profile.mid:
+                        if sender != sc1.profile.mid:
                             to = sender
                         else:
                             to = receiver
@@ -655,32 +573,32 @@ def clientBot(op):
                             cmd = command(text)
                             if cmd == "help":
                                 helpMessage = helpmessage()
-                                titanz.sendMessage(to, str(helpMessage))
+                                sc1.sendMessage(to, str(helpMessage))
                             if cmd == "oa ecchi":
-                                titanz.sendMessage(to,"ᴛᴇᴀᴍ ʜᴀᴄᴋʙᴏᴛ ʀᴇsɪᴅɪᴠɪs ᴋɪʟʟᴇʀ")
-                                titanz.sendContact(to,"u9f09cfcb17d037e2936b751bd9d40ead")
+                                sc1.sendMessage(to,"ᴛᴇᴀᴍ ʜᴀᴄᴋʙᴏᴛ ʀᴇsɪᴅɪᴠɪs ᴋɪʟʟᴇʀ")
+                                sc1.sendContact(to,"u9f09cfcb17d037e2936b751bd9d40ead")
                             if cmd == "creator":
-                                titanz.sendMessage(to,"")
-                                titanz.sendContact(to,"u9f09cfcb17d037e2936b751bd9d40ead")
+                                sc1.sendMessage(to,"")
+                                sc1.sendContact(to,"u9f09cfcb17d037e2936b751bd9d40ead")
                             elif cmd == "speed":
                                 start = time.time()
-                                titanz.sendMessage(to, "ᴄʜᴇᴄᴋ sᴘᴇᴇᴅ sᴇᴘʀɪʙᴏᴛ...")
+                                sc1.sendMessage(to, "ᴄʜᴇᴄᴋ sᴘᴇᴇᴅ sᴇᴘʀɪʙᴏᴛ...")
                                 elapsed_time = time.time() - start
-                                titanz.sendMessage(to, "[ Speed ]\n{} seconds".format(str(elapsed_time)))
+                                sc1.sendMessage(to, "[ Speed ]\n{} seconds".format(str(elapsed_time)))
                             elif cmd == "runtime":
                                 timeNow = time.time()
                                 runtime = timeNow - botStart
                                 runtime = format_timespan(runtime)
-                                titanz.sendMessage(to, "sᴇᴘʀɪ ʙᴏᴛ Has Been Run {}".format(str(runtime)))
+                                sc1.sendMessage(to, "sᴇᴘʀɪ ʙᴏᴛ Has Been Run {}".format(str(runtime)))
                             elif cmd == 'about':
                                 try:
                                     arr = []
                                     owner = "u9f09cfcb17d037e2936b751bd9d40ead"
-                                    creator = titanz.getContact(owner)
-                                    contact = titanz.getContact(titanzMID)
-                                    grouplist = titanz.getGroupIdsJoined()
-                                    contactlist = titanz.getAllContactIds()
-                                    blockedlist = titanz.getBlockedContactIds()
+                                    creator = sc1.getContact(owner)
+                                    contact = sc1.getContact(sc1MID)
+                                    grouplist = sc1.getGroupIdsJoined()
+                                    contactlist = sc1.getAllContactIds()
+                                    blockedlist = sc1.getBlockedContactIds()
                                     ret_ = "╔══[ sᴇᴘʀɪ ʙᴏᴛ ]"
                                     ret_ += "\n╠ Name : {}".format(contact.displayName)
                                     ret_ += "\n╠ Group : {}".format(str(len(grouplist)))
@@ -690,27 +608,27 @@ def clientBot(op):
                                     ret_ += "\n╠ Version : Premium"
                                     ret_ += "\n╠ Creator : {}".format(creator.displayName)
                                     ret_ += "\n╚══[ sᴇᴘʀɪ ʙᴏᴛ ]"
-                                    titanz.sendMessage(msg.to, "Special Thanks To\n\n-Author LinePy\n-HelloWorld\n-Bot Eater\n-NadyaTj\n-All My Friends")
-                                    titanz.sendMessage(to, str(ret_))
+                                    sc1.sendMessage(msg.to, "Special Thanks To\n\n-Author LinePy\n-HelloWorld\n-Bot Eater\n-NadyaTj\n-All My Friends")
+                                    sc1.sendMessage(to, str(ret_))
                                 except Exception as e:
-                                    titanz.sendMessage(msg.to, str(e))
+                                    sc1.sendMessage(msg.to, str(e))
 #----------------------------Status Command---------------------#
                             elif cmd == "autoadd on":
                                 if msg._from in Owner:
                                     settings["autoAdd"] = True
-                                    titanz.sendMessage(to, "Berhasil mengaktifkan auto add")
+                                    sc1.sendMessage(to, "Berhasil mengaktifkan auto add")
                             elif cmd == "autoadd off":
                                 if msg._from in Owner:
                                     settings["autoAdd"] = False
-                                    titanz.sendMessage(to, "Berhasil menonaktifkan auto add")
+                                    sc1.sendMessage(to, "Berhasil menonaktifkan auto add")
                             elif cmd == "autojoin on":
                                 if msg._from in Owner:
                                     settings["autoJoin"] = True
-                                    titanz.sendMessage(to, "Berhasil mengaktifkan auto join")
+                                    sc1.sendMessage(to, "Berhasil mengaktifkan auto join")
                             elif cmd == "autojoin off":
                                 if msg._from in Owner:
                                     settings["autoJoin"] = False
-                                    titanz.sendMessage(to, "Berhasil menonaktifkan auto join")
+                                    sc1.sendMessage(to, "Berhasil menonaktifkan auto join")
                             elif cmd == "status":
                                 try:
                                     ret_ = "╔══[ Status ]"
@@ -725,78 +643,74 @@ def clientBot(op):
                                     if settings["autoJoin"] == True: ret_ += "\n╠══[ ON ] Auto Join"
                                     else: ret_ += "\n╠══[ OFF ] Auto Join"
                                     ret_ += "\n╚══[ sᴇᴘʀɪ ʙᴏᴛ ]"
-                                    titanz.sendMessage(to, str(ret_))
+                                    sc1.sendMessage(to, str(ret_))
                                 except Exception as e:
-                                    titanz.sendMessage(msg.to, str(e))
+                                    sc1.sendMessage(msg.to, str(e))
 #----------------------------------Staff Add,Del Command-------------------------------#
                             elif "Staff add @" in msg.text:
                                 if msg._from in Owners:
                                     print ("[Command]Staff add executing")
                                     _name = msg.text.replace("Staff add @","")
                                     _nametarget = _name.rstrip('  ')
-                                    gs = titanz.getGroup(msg.to)
+                                    gs = sc1.getGroup(msg.to)
                                     gs = ki.getGroup(msg.to)
-                                    gs = ki2.getGroup(msg.to)
-                                    gs = ki3.getGroup(msg.to)
-                                    gs = ki4.getGroup(msg.to)
-                                    gs = ki5.getGroup(msg.to)
-                                    gs = titanz1.getGroup(msg.to)
+                                    gs = kk.getGroup(msg.to)
+                                    gs = kc.getGroup(msg.to)
+                                    gs = cl.getGroup(msg.to)
                                     targets = []
                                     for g in gs.members:
                                         if _nametarget == g.displayName:
                                             targets.append(g.mid)
                                         if targets == []:
-                                            titanz.sendMessage(msg.to,"Contact not found")
+                                            sc1.sendMessage(msg.to,"Contact not found")
                                     else:
                                         for target in targets:
                                             try:
                                                 admin.append(target)
-                                                titanz.sendMessage(msg.to,"Staff Ditambahkan")
+                                                sc1.sendMessage(msg.to,"Staff Ditambahkan")
                                             except:
                                                 pass
                                     print ("[Command]Staff add executed")
                                 else:
-                                    titanz.sendMessage(msg.to,"Command denied.")
-                                    titanz.sendMessage(msg.to,"Creator permission required.")
+                                    sc1.sendMessage(msg.to,"Command denied.")
+                                    sc1.sendMessage(msg.to,"Creator permission required.")
                             elif "Staff del @" in msg.text:
                                 if msg._from in Owners:
                                     print ("[Command]Staff remove executing")
                                     _name = msg.text.replace("Staff del @","")
                                     _nametarget = _name.rstrip('  ')
-                                    gs = titanz.getGroup(msg.to)
+                                    gs = sc1.getGroup(msg.to)
                                     gs = ki.getGroup(msg.to)
-                                    gs = ki2.getGroup(msg.to)
-                                    gs = ki3.getGroup(msg.to)
-                                    gs = ki4.getGroup(msg.to)
-                                    gs = ki5.getGroup(msg.to)
-                                    gs = titanz1.getGroup(msg.to)
+                                    gs = kk.getGroup(msg.to)
+                                    gs = kc.getGroup(msg.to)
+                                    gs = cl.getGroup(msg.to)
                                     targets = []
                                     for g in gs.members:
                                         if _nametarget == g.displayName:
                                             targets.append(g.mid)
                                         if targets == []:
-                                            titanz.sendMessage(msg.to,"Contact not found")
+                                            sc1.sendMessage(msg.to,"Contact not found")
                                     else:
                                         for target in targets:
                                             try:
                                                 admin.remove(target)
-                                                titanz.sendMessage(msg.to,"Staff Dihapus")
+                                                sc1.sendMessage(msg.to,"Staff Dihapus")
                                             except:
                                                 pass
                                     print ("[Command]Staff remove executed")
                                 else:
-                                    titanz.sendMessage(msg.to,"Command denied.")
-                                    titanz.sendMessage(msg.to,"Creator permission required.")
+                                    sc1.sendMessage(msg.to,"Command denied.")
+                                    sc1.sendMessage(msg.to,"Creator permission required.")
 #--------------------------Change Name Command---------------------------#
-                            elif cmd.startswith("titanz:"):
+                            elif cmd.startswith("sc1:"):
                                 sep = text.split(" ")
                                 string = text.replace(sep[0] + " ","")
                                 if len(string) <= 20:
-                                    profile = titanz.getProfile()
+                                    profile = sc1.getProfile()
                                     profile.displayName = string
-                                    titanz.updateProfile(profile)
-                                    titanz.sendMessage(to,"Berhasil mengganti display name menjadi{}".format(str(string)))
-                            elif cmd.startswith("titanz1:"):
+                                    sc1.updateProfile(profile)
+                                    sc1.sendMessage(to,"Berhasil mengganti display name menjadi{}".format(str(string)))
+                            elif cmd.startswith("cl:"):
                                 sep = text.split(" ")
                                 string = text.replace(sep[0] + " ","")
                                 if len(string) <= 20:
@@ -804,49 +718,33 @@ def clientBot(op):
                                     profile.displayName = string
                                     ki.updateProfile(profile)
                                     ki.sendMessage(to,"Berhasil mengganti display name menjadi {}".format(str(string)))
-                            elif cmd.startswith("titanz2:"):
+                            elif cmd.startswith("sc12:"):
                                 sep = text.split(" ")
                                 string = text.replace(sep[0] + " ","")
                                 if len(string) <= 20:
-                                    profile = ki2.getProfile()
+                                    profile = kk.getProfile()
                                     profile.displayName = string
-                                    ki2.updateProfile(profile)
-                                    ki2.sendMessage(to,"Berhasil mengganti display name menjadi {}".format(str(string)))
-                            elif cmd.startswith("titanz3:"):
+                                    kk.updateProfile(profile)
+                                    kk.sendMessage(to,"Berhasil mengganti display name menjadi {}".format(str(string)))
+                            elif cmd.startswith("sc13:"):
                                 sep = text.split(" ")
                                 string = text.replace(sep[0] + " ","")
                                 if len(string) <= 20:
-                                    profile = ki3.getProfile()
+                                    profile = kc.getProfile()
                                     profile.displayName = string
-                                    ki3.updateProfile(profile)
-                                    ki3.sendMessage(to,"Berhasil mengganti display name menjadi {}".format(str(string)))
-                            elif cmd.startswith("titanz4:"):
-                                sep = text.split(" ")
-                                string = text.replace(sep[0] + " ","")
-                                if len(string) <= 20:
-                                    profile = ki4.getProfile()
-                                    profile.displayName = string
-                                    ki4.updateProfile(profile)
-                                    ki4.sendMessage(to,"Berhasil mengganti display name menjadi {}".format(str(string)))
-                            elif cmd.startswith("titanz5:"):
-                                sep = text.split(" ")
-                                string = text.replace(sep[0] + " ","")
-                                if len(string) <= 20:
-                                    profile = ki5.getProfile()
-                                    profile.displayName = string
-                                    ki5.updateProfile(profile)
-                                    ki5.sendMessage(to,"Berhasil mengganti display name menjadi {}".format(str(string)))
+                                    kc.updateProfile(profile)
+                                    kc.sendMessage(to,"Berhasil mengganti display name menjadi {}".format(str(string)))
 #----------------------------------Change Bio Command-------------------------------#
-                            elif cmd.startswith("titanzbio:"):
+                            elif cmd.startswith("sc1bio:"):
                                 if msg._from in Owner + admin:
                                     sep = text.split(" ")
                                     string = text.replace(sep[0] + " ","")
                                 if len(string) <= 500:
-                                    profile = titanz.getProfile()
+                                    profile = sc1.getProfile()
                                     profile.statusMessage = string
-                                    titanz.updateProfile(profile)
-                                    titanz.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
-                            elif cmd.startswith("titanzbio1:"):
+                                    sc1.updateProfile(profile)
+                                    sc1.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
+                            elif cmd.startswith("sc1bio1:"):
                                 if msg._from in Owner + admin:
                                     sep = text.split(" ")
                                     string = text.replace(sep[0] + " ","")
@@ -855,291 +753,267 @@ def clientBot(op):
                                     profile.statusMessage = string
                                     ki.updateProfile(profile)
                                     ki.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
-                            elif cmd.startswith("titanzbio2:"):
+                            elif cmd.startswith("sc1bio2:"):
                                 if msg._from in Owner + admin:
                                     sep = text.split(" ")
                                     string = text.replace(sep[0] + " ","")
                                 if len(string) <= 500:
-                                    profile = ki2.getProfile()
+                                    profile = kk.getProfile()
                                     profile.statusMessage = string
-                                    ki2.updateProfile(profile)
-                                    ki2.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
-                            elif cmd.startswith("titanzbio3:"):
+                                    kk.updateProfile(profile)
+                                    kk.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
+                            elif cmd.startswith("sc1bio3:"):
                                 if msg._from in Owner + admin:
                                     sep = text.split(" ")
                                     string = text.replace(sep[0] + " ","")
                                 if len(string) <= 500:
-                                    profile = ki3.getProfile()
+                                    profile = kc.getProfile()
                                     profile.statusMessage = string
-                                    ki3.updateProfile(profile)
-                                    ki3.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
-                            elif cmd.startswith("titanzbio4:"):
-                                if msg._from in Owner + admin:
-                                    sep = text.split(" ")
-                                    string = text.replace(sep[0] + " ","")
-                                if len(string) <= 500:
-                                    profile = ki4.getProfile()
-                                    profile.statusMessage = string
-                                    ki4.updateProfile(profile)
-                                    ki4.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
-                            elif cmd.startswith("titanzbio5:"):
-                                if msg._from in Owner + admin:
-                                    sep = text.split(" ")
-                                    string = text.replace(sep[0] + " ","")
-                                if len(string) <= 500:
-                                    profile = ki5.getProfile()
-                                    profile.statusMessage = string
-                                    ki5.updateProfile(profile)
-                                    ki5.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
+                                    kc.updateProfile(profile)
+                                    kc.sendMessage(to,"Berhasil mengganti status message menjadi{}".format(str(string)))
 #------------------------------Respon Command--------------------------#
                             elif text.lower() == "respon":
-                                    titanz.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
-                                    ki.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
-                                    ki2.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
-                                    ki3.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
-                                    ki4.sendMessage(msg.to, "sᴇᴘʀɪ ᴘʀᴏᴛᴇᴄᴛ ᴡᴀs ʜᴇʀᴇ")
-                                    titanz1.sendMessage(msg.to, "ʀᴇᴀᴅʏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ")
+                                    sc1.sendMessage(msg.to, "sTay")
+                                    ki.sendMessage(msg.to, "sTay")
+                                    kk.sendMessage(msg.to, "sTay")
+                                    kc.sendMessage(msg.to, "sTy")
+                                    cl.sendMessage(msg.to, "sTay")
                             elif text.lower() == 'clearban':
                                 if msg._from in Owner:
                                     settings["blacklist"] = {}
-                                    titanz.sendMessage(msg.to,"Blacklist Dibersihkan")
+                                    sc1.sendMessage(msg.to,"Blacklist Dibersihkan")
 #------------------------------Join Command---------------------------#
                             elif text.lower() in ["masuk"]:
                                 if msg._from in Owner:    
-                                    G = titanz.getGroup(msg.to)
-                                    ginfo = titanz.getGroup(msg.to)
+                                    G = sc1.getGroup(msg.to)
+                                    ginfo = sc1.getGroup(msg.to)
                                     G.preventedJoinByTicket = False
-                                    titanz.updateGroup(G)
+                                    sc1.updateGroup(G)
                                     invsend = 0
-                                    Ticket = titanz.reissueGroupTicket(msg.to)
+                                    Ticket = sc1.reissueGroupTicket(msg.to)
                                     ki.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                    ki2.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                    ki3.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                    ki4.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                    titanz1.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                    G = titanz.getGroup(msg.to)
+                                    kk.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                    kc.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                    cl.acceptGroupInvitationByTicket(msg.to,Ticket)
+                                    G = sc1.getGroup(msg.to)
                                     G.preventedJoinByTicket = True
-                                    titanz.updateGroup(G)
+                                    sc1.updateGroup(G)
                                     G.preventedJoinByTicket(G)
-                                    titanz.updateGroup(G)
+                                    sc1.updateGroup(G)
                             elif text.lower() in ["byeall"]:
                                 if msg._from in Owner:   								
                                     ki.leaveGroup(msg.to)
-                                    ki2.leaveGroup(msg.to)
-                                    ki3.leaveGroup(msg.to)
-                                    ki4.leaveGroup(msg.to)
-                                    titanz1.leaveGroup(msg.to)	
+                                    kk.leaveGroup(msg.to)
+                                    kc.leaveGroup(msg.to)
+                                    cl.leaveGroup(msg.to)	
 #-------------------------------Protect Command-------------------------------#
                             elif text.lower() == 'protect on':
                                 if msg._from in admin and Owner:
                                         if settings["protect"] == True:
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Already On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Already On")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Set To On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Set To On")
                                         else:
                                             settings["protect"] = True
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Set To On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Set To On")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Already On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Already On")
                             elif text.lower() == 'protect off':
                                 if msg._from in admin and Owner:
                                         if settings["protect"] == False:
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Already Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Already Off")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Set To Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Set To Off")
                                         else:
                                             settings["protect"] = False
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Set To Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Set To Off")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Already Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Already Off")
                             elif text.lower() == 'qrprotect on':
                                 if msg._from in admin and Owner:
                                         if settings["qrprotect"] == True:
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection QR Already On")
+                                                sc1.sendMessage(msg.to,"➲ Protection QR Already On")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection QR Set To On")
+                                                sc1.sendMessage(msg.to,"➲ Protection QR Set To On")
                                         else:
                                             settings["qrprotect"] = True
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection QR Set To On")
+                                                sc1.sendMessage(msg.to,"➲ Protection QR Set To On")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection QR Already On")
+                                                sc1.sendMessage(msg.to,"➲ Protection QR Already On")
                             elif text.lower() == 'cancelprotect on':
                                 if msg._from in admin and Owner:
                                         if settings["cancelprotect"] == True:
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Cancel Already On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Cancel Already On")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Cancel Set To On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Cancel Set To On")
                                         else:
                                             settings["cancelprotect"] = True
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Cancel Set To On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Cancel Set To On")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Cancel Already On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Cancel Already On")
                             elif text.lower() == 'cancelprotect off':
                                 if msg._from in admin and Owner:
                                         if settings["cancelprotect"] == False:
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Cancel Already Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Cancel Already Off")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Cancel Set To Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Cancel Set To Off")
                                         else:
                                             settings["cancelprotect"] = False
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Cancel Set To Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Cancel Set To Off")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Cancel Already Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Cancel Already Off")
                             elif text.lower() == 'invprotect on':
                                 if msg._from in admin and Owner:
                                         if settings["inviteprotect"] == True:
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Invite Already On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Invite Already On")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Invite Set To On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Invite Set To On")
                                         else:
                                             settings["inviteprotect"] = True
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Invite Set To On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Invite Set To On")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Invite Already On")
+                                                sc1.sendMessage(msg.to,"➲ Protection Invite Already On")
                             elif text.lower() == 'invprotect off':
                                 if msg._from in admin and Owner:
                                         if settings["inviteprotect"] == False:
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Invite Already Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Invite Already Off")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Invite Set To Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Invite Set To Off")
                                         else:
                                             settings["inviteprotect"] = False
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection Invite Set To Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Invite Set To Off")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection Invite Already Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection Invite Already Off")
                             elif text.lower() == 'qrprotect off':
                                 if msg._from in admin and Owner:
                                         if settings["qrprotect"] == False:
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection QR Already Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection QR Already Off")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection QR Set To Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection QR Set To Off")
                                         else:
                                             settings["qrprotect"] = False
                                             if settings["lang"] == "JP":
-                                                titanz.sendMessage(msg.to,"➲ Protection QR Set To Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection QR Set To Off")
                                             else:
-                                                titanz.sendMessage(msg.to,"➲ Protection QR Already Off")
+                                                sc1.sendMessage(msg.to,"➲ Protection QR Already Off")
                             elif text.lower() == 'setpro on':
                                 if msg._from in Owner + admin:
                                     settings["protect"] = True
                                     settings["qrprotect"] = True
                                     settings["inviteprotect"] = True
                                     settings["cancelprotect"] = True
-                                    titanz.sendMessage(msg.to," All Protection Set To On")
+                                    sc1.sendMessage(msg.to," All Protection Set To On")
                                 else:
-                                    titanz.sendMessage(msg.to,"Just for Owner")
+                                    sc1.sendMessage(msg.to,"Just for Owner")
                             elif text.lower() == 'setpro off':
                                 if msg._from in Owner + admin:
                                     settings["protect"] = False
                                     settings["qrprotect"] = False
                                     settings["inviteprotect"] = False
                                     settings["cancelprotect"] = False
-                                    titanz.sendMessage(msg.to," All Protect Set To Off")
+                                    sc1.sendMessage(msg.to," All Protect Set To Off")
                                 else:
-                                    titanz.sendMessage(msg.to,"Just for Owner")
+                                    sc1.sendMessage(msg.to,"Just for Owner")
 #------------------------------Owner , Staff List------------------------------#
                             elif msg.text in ["Ownerlist","ownerlist"]:
                                 if Owner == []:
-                                    titanz.sendMessage(msg.to,"The Ownerlist is empty")
+                                    sc1.sendMessage(msg.to,"The Ownerlist is empty")
                                 else:
-                                    titanz.sendMessage(msg.to,"Tunggu...")
+                                    sc1.sendMessage(msg.to,"Tunggu...")
                                     mc = ""
                                     mc = "╔══[ Owner Bot Protect ]"
                                     for mi_d in Owner:
-                                        mc += "\n╠ "+titanz.getContact(mi_d).displayName + "\n"
+                                        mc += "\n╠ "+sc1.getContact(mi_d).displayName + "\n"
                                     mc += "╚══[ Finish ]"
-                                    titanz.sendMessage(msg.to,mc)
+                                    sc1.sendMessage(msg.to,mc)
                             elif msg.text in ["Stafflist","stafflist"]:
                                 if admin == []:
-                                    titanz.sendMessage(msg.to,"The stafflist is empty")
+                                    sc1.sendMessage(msg.to,"The stafflist is empty")
                                 else:
-                                    titanz.sendMessage(msg.to,"Tunggu...")
+                                    sc1.sendMessage(msg.to,"Tunggu...")
                                     mc = ""
                                     mc = "╔══[ Staff Bot Protect ]"
                                     for mi_d in admin:
-                                        mc += "\n╠ "+titanz.getContact(mi_d).displayName + "\n"
+                                        mc += "\n╠ "+sc1.getContact(mi_d).displayName + "\n"
                                     mc += "╚══[ Finish ]"
-                                    titanz.sendMessage(msg.to,mc)
+                                    sc1.sendMessage(msg.to,mc)
 #------------------------------Owner Add , Del---------------------------------#
                             elif "Owner add @" in msg.text:
                                 if msg._from in Owner:
                                     print ("[Command]Owner add executing")
                                     _name = msg.text.replace("Owner add @","")
                                     _nametarget = _name.rstrip('  ')
-                                    gs = titanz.getGroup(msg.to)
+                                    gs = sc1.getGroup(msg.to)
                                     gs = ki.getGroup(msg.to)
-                                    gs = ki2.getGroup(msg.to)
-                                    gs = ki3.getGroup(msg.to)
-                                    gs = ki4.getGroup(msg.to)
-                                    gs = ki5.getGroup(msg.to)
-                                    gs = titanz1.getGroup(msg.to)
+                                    gs = kk.getGroup(msg.to)
+                                    gs = kc.getGroup(msg.to)
+                                    gs = cl.getGroup(msg.to)
                                     targets = []
                                     for g in gs.members:
                                         if _nametarget == g.displayName:
                                             targets.append(g.mid)
                                         if targets == []:
-                                            titanz.sendMessage(msg.to,"Contact not found")
+                                            sc1.sendMessage(msg.to,"Contact not found")
                                     else:
                                         for target in targets:
                                             try:
                                                 Owner.append(target)
-                                                titanz.sendMessage(msg.to,"Owner Ditambahkan")
+                                                sc1.sendMessage(msg.to,"Owner Ditambahkan")
                                             except:
                                                 pass
                                     print ("[Command]Owner add executed")
                                 else:
-                                    titanz.sendMessage(msg.to,"Command denied.")
-                                    titanz.sendMessage(msg.to,"Owner permission required.")
+                                    sc1.sendMessage(msg.to,"Command denied.")
+                                    sc1.sendMessage(msg.to,"Owner permission required.")
                             elif "Owner del @" in msg.text:
                                 if msg._from in Owner:
                                     print ("[Command]Owner del executing")
                                     _name = msg.text.replace("Owner del @","")
                                     _nametarget = _name.rstrip('  ')
-                                    gs = titanz.getGroup(msg.to)
+                                    gs = sc1.getGroup(msg.to)
                                     gs = ki.getGroup(msg.to)
-                                    gs = ki2.getGroup(msg.to)
-                                    gs = ki3.getGroup(msg.to)
-                                    gs = ki4.getGroup(msg.to)
-                                    gs = titanz1.getGroup(msg.to)
+                                    gs = kk.getGroup(msg.to)
+                                    gs = kc.getGroup(msg.to)
+                                    gs = cl.getGroup(msg.to)
                                     targets = []
                                     for g in gs.members:
                                         if _nametarget == g.displayName:
                                             targets.append(g.mid)
                                         if targets == []:
-                                            titanz.sendMessage(msg.to,"Contact not found")
+                                            sc1.sendMessage(msg.to,"Contact not found")
                                     else:
                                         for target in targets:
                                             try:
                                                 Owner.remove(target)
-                                                titanz.sendMessage(msg.to,"Owner Dihapus")
+                                                sc1.sendMessage(msg.to,"Owner Dihapus")
                                             except:
                                                 pass
                                     print ("[Command]Owner del executed")
                                 else:
-                                    titanz.sendMessage(msg.to,"Command denied.")
-                                    titanz.sendMessage(msg.to,"Owner permission required.")
+                                    sc1.sendMessage(msg.to,"Command denied.")
+                                    sc1.sendMessage(msg.to,"Owner permission required.")
 #------------------------------Pembatas Script---------------------------------#
                     elif msg.contentType == 1:
                         if settings["changePictureProfile"] == True:
-                            path = titanz.downloadObjectMsg(msg_id)
+                            path = sc1.downloadObjectMsg(msg_id)
                             settings["changePictureProfile"] = False
-                            titanz.updateProfilePicture(path)
-                            titanz.sendMessage(to, "Berhasil mengubah foto profile")
+                            sc1.updateProfilePicture(path)
+                            sc1.sendMessage(to, "Berhasil mengubah foto profile")
                     elif msg.contentType == 1:
                         if settings["changePictureProfile"] == True:
                             path = ki.downloadObjectMsg(msg_id)
@@ -1148,22 +1022,22 @@ def clientBot(op):
                             ki.sendMessage(to, "Berhasil mengubah foto profile")
                     elif msg.contentType == 1:
                         if settings["changePictureProfile"] == True:
-                            path = ki2.downloadObjectMsg(msg_id)
+                            path = kk.downloadObjectMsg(msg_id)
                             settings["changePictureProfile"] = False
-                            ki2.updateProfilePicture(path)
-                            ki3.sendMessage(to, "Berhasil mengubah foto profile")
+                            kk.updateProfilePicture(path)
+                            kc.sendMessage(to, "Berhasil mengubah foto profile")
                     elif msg.contentType == 1:
                         if settings["changePictureProfile"] == True:
-                            path = ki3.downloadObjectMsg(msg_id)
+                            path = kc.downloadObjectMsg(msg_id)
                             settings["changePictureProfile"] = False
-                            ki3.updateProfilePicture(path)
-                            ki3.sendMessage(to, "Berhasil mengubah foto profile")
+                            kc.updateProfilePicture(path)
+                            kc.sendMessage(to, "Berhasil mengubah foto profile")
                         if msg.toType == 2:
                             if to in settings["changeGroupPicture"]:
-                                path = titanz.downloadObjectMsg(msg_id)
+                                path = sc1.downloadObjectMsg(msg_id)
                                 settings["changeGroupPicture"].remove(to)
-                                titanz.updateGroupPicture(to, path)
-                                titanz.sendMessage(to, "Berhasil mengubah foto group")
+                                sc1.updateGroupPicture(to, path)
+                                sc1.sendMessage(to, "Berhasil mengubah foto group")
                     elif msg.contentType == 7:
                         if settings["checkSticker"] == True:
                             stk_id = msg.contentMetadata['STKID']
@@ -1175,18 +1049,18 @@ def clientBot(op):
                             ret_ += "\n╠ STICKER VERSION : {}".format(stk_ver)
                             ret_ += "\n╠ STICKER URL : line://shop/detail/{}".format(pkg_id)
                             ret_ += "\n╚══[ Finish ]"
-                            titanz.sendMessage(to, str(ret_))
+                            sc1.sendMessage(to, str(ret_))
                     elif msg.contentType == 13:
                         if settings["checkContact"] == True:
                             try:
-                                contact = titanz.getContact(msg.contentMetadata["mid"])
-                                if titanz != None:
-                                    cover = titanz.getProfileCoverURL(msg.contentMetadata["mid"])
+                                contact = sc1.getContact(msg.contentMetadata["mid"])
+                                if sc1 != None:
+                                    cover = sc1.getProfileCoverURL(msg.contentMetadata["mid"])
                                 else:
                                     cover = "Tidak dapat masuk di line channel"
                                 path = "http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus))
                                 try:
-                                    titanz.sendImageWithURL(to, str(path))
+                                    sc1.sendImageWithURL(to, str(path))
                                 except:
                                     pass
                                 ret_ = "╔══[ Details Contact ]"
@@ -1196,15 +1070,15 @@ def clientBot(op):
                                 ret_ += "\n╠ Gambar Profile : http://dl.profile.line-cdn.net/{}".format(str(contact.pictureStatus))
                                 ret_ += "\n╠ Gambar Cover : {}".format(str(cover))
                                 ret_ += "\n╚══[ Finish ]"
-                                titanz.sendMessage(to, str(ret_))
+                                sc1.sendMessage(to, str(ret_))
                             except:
-                                titanz.sendMessage(to, "Kontak tidak valid")
+                                sc1.sendMessage(to, "Kontak tidak valid")
                     elif msg.contentType == 16:
                         if settings["checkPost"] == True:
                             try:
                                 ret_ = "╔══[ Details Post ]"
                                 if msg.contentMetadata["serviceType"] == "GB":
-                                    contact = titanz.getContact(sender)
+                                    contact = sc1.getContact(sender)
                                     auth = "\n╠ Penulis : {}".format(str(contact.displayName))
                                 else:
                                     auth = "\n╠ Penulis : {}".format(str(msg.contentMetadata["serviceName"]))
@@ -1234,9 +1108,9 @@ def clientBot(op):
                                     text = "\n╠ Tulisan : {}".format(str(msg.contentMetadata["text"]))
                                     ret_ += text
                                 ret_ += "\n╚══[ Finish ]"
-                                titanz.sendMessage(to, str(ret_))
+                                sc1.sendMessage(to, str(ret_))
                             except:
-                                titanz.sendMessage(to, "🙄🙄🙄")
+                                sc1.sendMessage(to, "🙄🙄🙄")
             except Exception as error:
                 logError(error)
                 traceback.print_tb(error.__traceback__)
@@ -1251,7 +1125,7 @@ def clientBot(op):
                 sender = msg._from
                 if msg.toType == 0 or msg.toType == 1 or msg.toType == 2:
                     if msg.toType == 0:
-                        if sender != titanz.profile.mid:
+                        if sender != sc1.profile.mid:
                             to = sender
                         else:
                             to = receiver
@@ -1260,21 +1134,21 @@ def clientBot(op):
                     elif msg.toType == 2:
                         to = receiver
                     if settings["autoRead"] == True:
-                        titanz.sendChatChecked(to, msg_id)
+                        sc1.sendChatChecked(to, msg_id)
                     if to in read["readPoint"]:
                         if sender not in read["ROM"][to]:
                             read["ROM"][to][sender] = True
                     if sender in settings["mimic"]["target"] and settings["mimic"]["status"] == True and settings["mimic"]["target"][sender] == True:
                         text = msg.text
                         if text is not None:
-                            titanz.sendMessage(msg.to,text)
+                            sc1.sendMessage(msg.to,text)
                     if settings["unsendMessage"] == True:
                         try:
                             msg = op.message
                             if msg.toType == 0:
-                                titanz.log("[{} : {}]".format(str(msg._from), str(msg.text)))
+                                sc1.log("[{} : {}]".format(str(msg._from), str(msg.text)))
                             else:
-                                titanz.log("[{} : {}]".format(str(msg.to), str(msg.text)))
+                                sc1.log("[{} : {}]".format(str(msg.to), str(msg.text)))
                                 msg_dict[msg.id] = {"text": msg.text, "from": msg._from, "createdTime": msg.createdTime, "contentType": msg.contentType, "contentMetadata": msg.contentMetadata}
                         except Exception as error:
                             logError(error)
@@ -1290,9 +1164,9 @@ def clientBot(op):
                                     if l not in n_links:
                                         n_links.append(l)
                                 for ticket_id in n_links:
-                                    group = titanz.findGroupByTicket(ticket_id)
-                                    titanz.acceptGroupInvitationByTicket(group.id,ticket_id)
-                                    titanz.sendMessage(to, "Berhasil masuk ke group %s" % str(group.name))
+                                    group = sc1.findGroupByTicket(ticket_id)
+                                    sc1.acceptGroupInvitationByTicket(group.id,ticket_id)
+                                    sc1.sendMessage(to, "Berhasil masuk ke group %s" % str(group.name))
 
                             if 'MENTION' in msg.contentMetadata.keys()!= None:
                                 names = re.findall(r'@(\w+)', text)
@@ -1300,7 +1174,7 @@ def clientBot(op):
                                 mentionees = mention['MENTIONEES']
                                 lists = []
                                 for mention in mentionees:
-                                    if titanzMid in mention["M"]:
+                                    if sc1Mid in mention["M"]:
                                         if settings["autoRespon"] == True:
                                             sendMention(sender, "Oit @!,hadir", [sender])
                                     break
@@ -1345,11 +1219,11 @@ def clientBot(op):
 while True:
     try:
         delete_log()
-        ops = titanzPoll.singleTrace(count=50)
+        ops = sc1Poll.singleTrace(count=50)
         if ops is not None:
             for op in ops:
                 clientBot(op)
-                titanzPoll.setRevision(op.revision)
+                sc1Poll.setRevision(op.revision)
     except Exception as error:
         logError(error)
         
